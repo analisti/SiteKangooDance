@@ -2672,10 +2672,11 @@ input[type="radio"]+label:before {
 }
 
 .image.fill img {
-	display: block;
-	margin: auto;
-	max-width: 100%;
-	height: auto;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
 }
 
 /* List */
