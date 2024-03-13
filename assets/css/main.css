@@ -2692,7 +2692,15 @@ input[type="radio"]+label:before {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	object-fit: fill;
+	object-fit: cover;
+	/* padrão para telas maiores */
+}
+
+/* Quando a tela tem 600px ou menos de largura, mude para object-fit: contain; */
+@media (max-width: 600px) {
+	.image.fill img {
+		object-fit: contain;
+	}
 }
 
 
