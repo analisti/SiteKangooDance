@@ -154,33 +154,28 @@ textarea {
 	appearance: none;
 }
 
-
 .audio-player {
 	width: 300px;
 	background-image: url('../../images/logo.jpg');
-	/* Substitua pelo caminho da sua imagem */
 	background-size: cover;
-	/* Ajusta a imagem para cobrir todo o elemento */
-	padding: 85px;
+	padding: 90px;
 	border-radius: 10px;
 	margin: auto;
 	color: #fff;
-	/* Cor do texto */
 	text-align: center;
 	box-shadow: 0 4px 60px rgba(0, 0, 0, 0.5);
-	/* Sombra ao redor do player */
+	animation: pulsate 2s infinite;
 }
 
 audio {
 	width: 100%;
-	margin-top: 30px;
+	margin-top: 20px;
 	color: #fff;
 	outline: none;
 }
 
 audio::-webkit-slider-thumb {
 	background: #1db954;
-	/* Cor do controle deslizante do áudio */
 }
 
 .audio-player h2 {
@@ -207,13 +202,6 @@ audio::-webkit-slider-thumb {
 		transform: scale(1);
 	}
 }
-
-.audio-player {
-	animation: pulsate 2s infinite;
-}
-
-
-
 
 /* Estilos para o botão do WhatsApp */
 .whatsapp-button {
@@ -2742,6 +2730,7 @@ input[type="radio"]+label:before {
 }
 
 
+<<<<<<< HEAD=======>>>>>>>2e7e18f9b42edbc05b835cb20eae3d0b27f6d60e
 /* List */
 
 ol {
