@@ -154,6 +154,67 @@ textarea {
 	appearance: none;
 }
 
+
+.audio-player {
+	width: 300px;
+	background-image: url('../../images/logo.jpg');
+	/* Substitua pelo caminho da sua imagem */
+	background-size: cover;
+	/* Ajusta a imagem para cobrir todo o elemento */
+	padding: 85px;
+	border-radius: 10px;
+	margin: auto;
+	color: #fff;
+	/* Cor do texto */
+	text-align: center;
+	box-shadow: 0 4px 60px rgba(0, 0, 0, 0.5);
+	/* Sombra ao redor do player */
+}
+
+audio {
+	width: 100%;
+	margin-top: 30px;
+	color: #fff;
+	outline: none;
+}
+
+audio::-webkit-slider-thumb {
+	background: #1db954;
+	/* Cor do controle deslizante do áudio */
+}
+
+.audio-player h2 {
+	font-size: var(--font-size);
+	color: var(--text-color);
+	text-align: center;
+	border-radius: 30px;
+	font-family: 'Roboto', sans-serif;
+	background: linear-gradient(to right, #0e55b5, #ebd03e, #10100f, #8c7c63, #5494d4);
+	padding: var(--padding);
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes pulsate {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.1);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+.audio-player {
+	animation: pulsate 2s infinite;
+}
+
+
+
+
 /* Estilos para o botão do WhatsApp */
 .whatsapp-button {
 	cursor: pointer;
@@ -2677,7 +2738,9 @@ input[type="radio"]+label:before {
 	position: absolute;
 	top: 0;
 	width: 100%;
+	object-fit: contain;
 }
+
 
 /* List */
 
